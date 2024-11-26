@@ -18,8 +18,8 @@ document.onkeydown=function(a){
     {
         alert("This operation Not allowed !");
     }
-}
-window.onscroll = function() {
+  }
+  window.document.onscroll=function() {
     if (document.documentElement.scrollTop <300) {
       document.getElementById("Hbtn").style.backgroundColor="red";
       document.getElementById("Nbtn").style.backgroundColor="";
@@ -56,11 +56,23 @@ window.onscroll = function() {
         document.getElementById("Abtn").style.backgroundColor="red";
       };
   }
-  window.onscroll=function(){
-  if(screen.availWidth<1000)
-  {
-    document.querySelector("body").style.opacity="0";
-    alert("This Website run only screen width >1024px");
+
+  function formCheck(){
+    a=document.getElementById("uname").value;
+    b=document.getElementById("uemail").value;
+    c=document.getElementById("umsg").value;
+    var Objtext={
+      Name :a,
+      Email:b,
+      message:c,
+    }
+    var Strtext=JSON.stringify(Objtext);
+    if(a!=" "&&b!=" "&&c!=" ")
+    {
+      localStorage.setItem(b,Strtext);
+    }
+    alert("Your message sucessfully sent")
+
   }
-}
+
   

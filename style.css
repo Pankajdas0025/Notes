@@ -303,10 +303,11 @@ h3 a:hover{
     }
     #Logo{
       width:40%;
-      height: 120px;
-      background-color: #d6ed50;
+      height: 130px;
+      background-color:transparent;
       margin: 0;
       padding: 0;
+      border: none;
       
     }
     header button{

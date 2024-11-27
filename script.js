@@ -13,13 +13,13 @@ function Scrollbtn(){
       
 
 }
-document.onkeydown=function(a){
-    if(a.keyCode==17||a.keyCode==85)
-    {
-        alert("This operation Not allowed !");
-    }
-  }
-  window.document.onscroll=function() {
+// document.onkeydown=function(a){
+//     if(a.keyCode==17||a.keyCode==85)
+//     {
+//         alert("This operation Not allowed !");
+//     }
+//   }
+//   window.document.onscroll=function() {
     if (document.documentElement.scrollTop <300) {
       document.getElementById("Hbtn").style.backgroundColor="red";
       document.getElementById("Nbtn").style.backgroundColor="";

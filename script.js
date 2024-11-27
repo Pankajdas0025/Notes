@@ -13,13 +13,8 @@ function Scrollbtn(){
       
 
 }
-// document.onkeydown=function(a){
-//     if(a.keyCode==17||a.keyCode==85)
-//     {
-//         alert("This operation Not allowed !");
-//     }
-//   }
-//   window.document.onscroll=function() {
+
+  window.document.onscroll=function() {
     if (document.documentElement.scrollTop <300) {
       document.getElementById("Hbtn").style.backgroundColor="red";
       document.getElementById("Nbtn").style.backgroundColor="";
@@ -55,7 +50,7 @@ function Scrollbtn(){
         document.getElementById("Rbtn").style.backgroundColor="";
         document.getElementById("Abtn").style.backgroundColor="red";
       };
-  }
+    }
 
   function formCheck(){
     a=document.getElementById("uname").value;

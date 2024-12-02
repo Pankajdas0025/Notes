@@ -65,8 +65,9 @@ function Scrollbtn(){
     if(a!=" "&&b!=" "&&c!=" ")
     {
       localStorage.setItem(b,Strtext);
+      alert("Your message sucessfully sent");
     }
-    alert("Your message sucessfully sent")
+    else alert("All field is required !");
 
   }
 

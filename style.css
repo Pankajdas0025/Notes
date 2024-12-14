@@ -350,14 +350,16 @@ h3 a:hover{
     background-color:transparent;
     backdrop-filter: blur(45px);
     display: none;
-  }.Mmenu a{
+  }
+  
+  .Mmenu a{
     text-decoration: none;
     text-align: left;
     padding: 0;
  
   }
   
-  .Mmenu  button {
+  .Mmenu button {
     background-color:gray;
     display: block;
     margin-top: 80px;

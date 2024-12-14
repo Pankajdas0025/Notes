@@ -17,6 +17,8 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
       integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- this is for  only animation -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
    />
@@ -29,7 +31,10 @@
     <header  >
           
             <!-- <button id="tbtn" onclick="toggle()"ondblclick="toggleback()"><div id="toggle"></div></button> -->
-             <img src="Images/Logo.png" id="Logo">
+            <img src="Images/Logo.png" id="Logo">
+            <!-- mobile menu bar -->
+            <h1 id="Mobmenu" onclick="openNav();">&#9776;</h1>
+            <!-- End mobile menu bar  -->
             <a href="#About"><button id="Abtn">About Me</button></a>
             <a href="#Reference"><button id="Rbtn">Reference</button></a>
             <a href="#PYQ"><button id="Pbtn">PQP</button></a>
@@ -44,6 +49,15 @@
     <br>
 
     <div class="SC1" >
+        <!-- Code for Mobile navbar -->
+        <div class="Mmenu" id="result">
+            <a ><button id="Cbtn" onclick="closeNav()">Close</button></a>
+            <a href="#About"><button id="Abtn">About Me</button></a>
+            <a href="#Reference"><button id="Rbtn">Reference</button></a>
+            <a href="#PYQ"><button id="Pbtn">PQP</button></a>
+            <a href="#Notes"><button id="Nbtn">Notes</button></a>
+             <button onclick="Scrollbtn()" id="Hbtn">Home</button>
+        </div>
     <!-- <span></span> -->
      <table class="SC1T" border="0">
         <tr>
@@ -214,7 +228,7 @@
                        
                     </ul></td>
             </tr>
-            <tr>df
+            <tr>
                 <td><h3>FOURTH SEM</h3>
                     <ul>
                         <li id="Event">CT - I Paper</li>

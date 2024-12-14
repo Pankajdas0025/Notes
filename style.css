@@ -1,6 +1,9 @@
-
+html{
+  scroll-behavior: smooth;
+  opacity: 1;
+}
 body{
-opacity: 1;
+opacity: 100;
 }
 
 
@@ -15,7 +18,17 @@ header{
     left: 0;
     right: 0;
     overflow: hidden;
-}#Logo{
+}#Mobmenu
+
+{
+  display: none;
+  color: rgb(8, 2, 2);
+  margin-top: 0;
+ background-color: red;
+}
+
+
+#Logo{
   width: 250px;
   height: 80px;
   background-color: #d6ed50;
@@ -288,11 +301,13 @@ h3 a:hover{
     text-decoration: none;
   }.SC5 a:hover{
     text-decoration: overline;
+  }.Mmenu{
+    display: none;
   }
  
 
 
-  @media only screen and (max-width:425px) {
+  @media only screen and (max-width:500px) {
     header{
      height: 220px;
      margin-bottom: 25%;
@@ -302,11 +317,12 @@ h3 a:hover{
     }
     #Logo{
       width:40%;
-      height: 130px;
+      height: 150px;
       background-color:transparent;
       margin: 0;
-      padding: 0;
+      padding: 10px;
       border: none;
+      margin-top: 25px;
       
     }
     header button{
@@ -314,12 +330,53 @@ h3 a:hover{
       width: 10vw;
       font-size: 25px;
       font-weight: bolder;
-      padding: 2px;
+     margin-right: 425px;
       display:none;
       
     
     
-  }.SC1{ 
+  }#Mobmenu{
+    display: block;
+    font-size:85px;
+    color: rgb(255, 255, 255);
+    margin-left:850px;
+    padding: 0;
+    margin-top:-150px;
+    background-color:transparent;
+  }.Mmenu{
+    height:100%;
+    width: 100%;
+    z-index: 100;
+    background-color:transparent;
+    backdrop-filter: blur(45px);
+    display: none;
+  }.Mmenu a{
+    text-decoration: none;
+    text-align: left;
+    padding: 0;
+ 
+  }
+  
+  .Mmenu  button {
+    background-color:gray;
+    display: block;
+    margin-top: 80px;
+    height: 60px;
+    width: 300px;
+    font-size: 45px;
+    color: rgb(10, 4, 4);
+    outline: 0;
+    border: none;
+    backdrop-filter: blur(45px);
+    margin-left:400px;
+    text-decoration: none;
+ 
+  }#Cbtn{
+    background-color:red;
+  }
+  
+  
+  .SC1{ 
     height: 900px;
     width:1000px;
     margin-top: 145px;

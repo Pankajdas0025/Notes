@@ -5,14 +5,16 @@ function  Time(){
 
 }
 setInterval(Time,100)
-
+// for home button only //
 
 function Scrollbtn(){
 
-        window.scrollTo(0, -1000);
+ window.scrollTo(0, -1000);
       
 
 }
+
+// nav button 
 
   window.document.onscroll=function() {
     if (document.documentElement.scrollTop <300) {
@@ -71,4 +73,11 @@ function Scrollbtn(){
 
   }
 
+function openNav() {
+  document.getElementById("result").style.display="block";
+}
+
+function closeNav() {
+  document.getElementById("result").style.display="none";
+}
   

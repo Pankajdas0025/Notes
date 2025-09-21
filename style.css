@@ -1,45 +1,85 @@
-html{
+html
+{
   scroll-behavior: smooth;
   opacity: 1;
+  padding: 0;
+  margin: 0;
 }
+:root
+{
+--primary-color:rgb(244, 124, 19);
+--secondary-color:rgb(253, 253, 253);
+--tertiary-color:rgb(0, 255, 0);
+--text-color:black;
+--text-color2:rgb(255, 255, 255);
+--border-radius:0px;
+--box-shadow:1px 2px 1px black;
+--text-style:normal;
+--text-decoration:none;
+--header-footer--bg:rgb(33, 42, 43);
+--font:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
 body{
-opacity: 100;
+padding: 20px;
+background: rgb(255, 255, 255);font-family: var(--font);
+
+}
+main{
+ /* background-color: wheat;
+
+  /*background: linear-gradient(180deg , var(--primary-color) , var(--secondary-color) , var(--tertiary-color)); */
 }
 
 
-header{
-    height: 120px;
-    width: 100%;
-    position:fixed;
-    background-image: linear-gradient(to right,#333c51,#333c51,purple);
-    backdrop-filter:blur(95px);
+/* Header ----------------------------------------------------------*/
+header
+{
+    /* height: 120px;
+    width: 100%; */
+    position:sticky;
+    top: 0px;
+    z-index: 100;
+   background:var(--header-footer--bg);
+   width: 100%;
+   right:0;
+   overflow: hidden;
+    /* backdrop-filter:blur(95px);
     z-index: 1;
     top: 0;
     left: 0;
     right: 0;
-    overflow: hidden;
-}#Mobmenu
-
-{
-  display: none;
-  color: rgb(8, 2, 2);
-  margin-top: 0;
- background-color: red;
+    overflow: hidden; */
 }
+
+#Mobmenu
+{
+    display:none;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    z-index: 100;
+    position: absolute;
+
+}
+.Mmenu
+{
+    display:none;
+ }
 
 
 #Logo{
   width: 250px;
   height: 80px;
   background-color: #d6ed50;
-  
+
 }
 
 header button{
     height: 50px;
     width: 10vw;
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: 20px;
     padding: 2px;
     margin-right: 20px;
     margin-top: 20px;
@@ -49,21 +89,27 @@ header button{
     border: 0px;
     background-color: transparent;
     color: aliceblue;
-    font-family:Arial, Helvetica, sans-serif;
-}
-    
-.SC1{ 
-  margin-top: 10%;
-    height: 600px;
-    width: 100%;
-    /* background-color: rgb(217, 217, 217); */
-    left: 0;
-    right: 0;
-    overflow: hidden;
+    font-family:var(--font);
+  }
+/* Header ----------------------------------------------------------end*/
 
-}.SC1T,.SC2T,.SC3T{
+/* Home Page First Section ------------------------------------------ */
+.SC1{
+
+    height: 600px;
+    /* background-color: rgb(217, 217, 217); */
+
+
+
+}
+
+/* Home Page First Section ------------------------------------------end*/
+
+
+.SC1T,.SC2T,.SC3T{
     width: 100%;
     height: auto;
+    display: block;
     /* border: 1px solid; */
 }#TMU{
     /* height: 200px;
@@ -83,7 +129,7 @@ header button{
     padding-top: 0;
     padding-left: 30px;
 
-  
+
 }#Timebtn{
   height: 70px;
   width: 180px;
@@ -97,16 +143,17 @@ header button{
   border: none;
   backdrop-filter: blur(45px);
   background-color:transparent;
-}
+}  #pplogo
+  {
+    height: 80%;
+    width: 80%;
 
+  }
+
+/* Home Page second Section for Notes ------------------------------------------  */
 .SC2{
     height: auto;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    backdrop-filter:blur(45px);
-  
-
-  
 
 }
 i{
@@ -118,13 +165,13 @@ i{
     backdrop-filter: blur(25px);
     border-radius: 49%;
     /* border: 2px solid black; */
-   
+
 }.SC2T,.SC3T h3{
     /* background-color: aqua; */
     text-align: center;
     font-size: 25px;
-  
-   
+
+
 
 }.SC2T li{
     color: rgb(14, 13, 13);
@@ -138,7 +185,7 @@ i{
     text-align: left;
 
 }.SC2T li:hover{
- 
+
     background-color: rgb(103, 221, 248);
 }
 a{
@@ -148,10 +195,14 @@ a{
 h3 a:hover{
     color:rgb(14, 245, 30);
     margin-top: 0;
-}.SC3{
+}
+
+/* Section Three For Previous Year QuestionS links  ---------------------------------------------------*/
+
+.SC3{
     width: 100%;
     height: auto;
-    background-color:rgb(170,175,225) ;
+
 
 
 }.SC3T li{
@@ -171,17 +222,23 @@ h3 a:hover{
     background-image: linear-gradient(to left,red,black,black,red);
 }.SC3T a{
     text-decoration: none;
-}.SC4{
-    height: 720px;
-    width: 100%;
-    background-color: #c4c7a4;
-    backdrop-filter:blur(45px);
-    margin-bottom: 30px;
-  
+}
 
-  
+/* Section Three For Previous Year QuestionS links =--------------------------------------------------end */
+
+
+
+
+/* Section  four For about  -------------------------------------------------------------------------*/
+.SC4{
+    height: auto;
+    width: 100%;
+    background-color: #9eb02c;
+    margin-bottom: 30px;
+
 
 }
+
 .flip-box {
     width: 500px;
     height: 550px;
@@ -191,7 +248,7 @@ h3 a:hover{
     float:left;
     display:block;
   }
-  
+
   .flip-box-inner {
     position: absolute;
     width: 100%;
@@ -203,11 +260,11 @@ h3 a:hover{
     background-color: rgb(33, 33, 56);
     border-radius: 23px;
   }
-  
+
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
-  
+
   .flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
@@ -216,7 +273,7 @@ h3 a:hover{
     backface-visibility: hidden;
     border-radius: 23px;
   }
-  
+
   .flip-box-front {
     /* background-color:rgb(29, 69, 94); */
     background-image: url(Images/A.png);
@@ -225,13 +282,13 @@ h3 a:hover{
     color:black;
     border-radius: 23px;
   }
-  
+
   .flip-box-back {
     background-color: transparent;
     color: white;
     transform: rotateY(180deg);
     border-radius: 23px;
-   
+
   }#Aimg{
     height: 200px;
     width: 200px;
@@ -241,7 +298,7 @@ h3 a:hover{
     font-size: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style:normal;
-  
+
   }.flip-box-back h1{
     height: 50px auto;
     width: 400px;
@@ -252,7 +309,7 @@ h3 a:hover{
     font-size: 25px;
     margin-left: 45px;
   }
-  
+
   input[type=text],input[type=email],textarea{
     width: 350px;
     height: 50px;
@@ -280,18 +337,13 @@ h3 a:hover{
    transform: scale(1.2);
     box-shadow: 2px 2px 28px rgb(7, 248, 15);
   }
-  .SC6{
-    width: 100%;
-    height: 150px;
-    background-color: #110d0d;
-    color: white;
-    font-size: 25px;
-    align-items: center;
-    align-content: center;
 
-  }.SC5{
+  /* Section Four for About  ------------------------------------------------------------------------end-*/
+
+  /* Section  five  For reference Links  ----------------------------------------------------------------*/
+  .SC5{
     width: 100%;
-    height: 400px;
+    height:auto;
     background-color: #c4c7a4;
   }.SC5 a{
     font-size: 25px;
@@ -301,192 +353,279 @@ h3 a:hover{
     text-decoration: none;
   }.SC5 a:hover{
     text-decoration: overline;
-  }.Mmenu{
-    display: none;
   }
- 
+  /* Section  five  For reference Links  ------------------------------------------------------------------end-*/
+
+  /* Section  six  For footer  --------------------------------------------------------------------------------*/
+
+  .SC6{
+    width: 100%;
+    height:auto;
+    background:var(--header-footer--bg);
+    display: flex;
+    padding: 0;
 
 
-  @media only screen and (max-width:500px) {
-    header{
-     height: 220px;
-     margin-bottom: 25%;
-     /* overflow-wrap: break-word; */
-     
-     
+  }.SC6 .foter-div1
+
+  {
+    color: var(--text-color2);
+    width: 30%;
+    height: 100%;
+    margin:0 1.66%;
+    padding: 25px;
+  }
+
+  .SC6 .foter-div1 a
+  {
+display: block;
+padding: 10px 0;
+font-size:20px;
+text-decoration: var(--text-decoration);
+color: var(--text-color2);
+transition: 0.5s ease-in-out;
+
+  }
+
+    .SC6 .foter-div1 a:hover
+  {
+transform: translateX(20px);
+  }
+  /* Section  six for footer  ------------------------------------------------------------------------end-----*/
+
+
+/* Mobiles Responsive  */
+
+
+  @media only screen and (max-width:700px)
+   {
+
+    body
+    {
+      margin: 0;
+      padding: 5px;
+      font-size: 5px;
+
     }
+    main
+    {
+      margin: 0;
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+    header
+
+    {
+height: 80px;
+width: 100vw;
+margin: 0;
+
+    }
+
     #Logo{
-      width:40%;
-      height: 150px;
+      width:60%;
+      height:100%;
       background-color:transparent;
       margin: 0;
-      padding: 10px;
       border: none;
-      margin-top: 25px;
-      
+
+
     }
     header button{
-      height: 50px;
-      width: 10vw;
-      font-size: 25px;
-      font-weight: bolder;
-     margin-right: 425px;
+
       display:none;
-      
-    
-    
+
+
+
   }#Mobmenu{
-    display: block;
-    font-size:85px;
+    display:block;
+    font-size:40px;
     color: rgb(255, 255, 255);
-    margin-left:850px;
     padding: 0;
-    margin-top:-150px;
-    background-color:transparent;
-  }.Mmenu{
-    height:100%;
-    width: 100%;
-    z-index: 100;
-    background-color:transparent;
-    backdrop-filter: blur(45px);
-    display: none;
+    z-index: 1000;
+    height: 25px;
+    width: 50px;
+    top: -15px;
+    right: 10px;
+
   }
-  
+
+  .Mmenu{
+    height:auto;
+    width:100vw;
+    z-index: 100;
+    background-color:rgb(255, 255, 255);
+    backdrop-filter: blur(45px);
+    display:none;
+    padding: 20px 0;
+    position:fixed;
+
+
+  }
   .Mmenu a{
     text-decoration: none;
     text-align: left;
     padding: 0;
- 
   }
-  
+
   .Mmenu button {
     background-color:gray;
     display: block;
-    margin-top: 80px;
+    margin-top:10px;
     height: 60px;
-    width: 300px;
-    font-size: 45px;
+    width:100vw;
+    font-size: 25px;
     color: rgb(10, 4, 4);
     outline: 0;
     border: none;
     backdrop-filter: blur(45px);
-    margin-left:400px;
+
     text-decoration: none;
- 
+
   }#Cbtn{
     background-color:red;
   }
-  
-  
-  .SC1{ 
-    height: 900px;
-    width:1000px;
-    margin-top: 145px;
-    overflow-x: hidden;
-    background-color: rgb(255, 255, 255);
-    
 
-}#Timebtn{
+
+  .SC1{
+    height: auto;
+    width:100vw;
+    display: block;
+
+}.SC1T td
+
+{
+  display: block;
+  width: 100vw;
+}#Heading
+
+{
+
+  font-size: 40px;
+}
+
+
+#Timebtn{
   height: 70px;
   width: 180px;
-  margin-top: -55px;
-  right: -690px;
-  position: absolute;
-  background-color: transparent;
   font-size: 28px;
   font-weight: bold;
   color: #230e09;
   border: none;
-    
+
+
   }#TMU{
-   
+
     margin-left:30px;
   }
+
+  #pplogo
+  {
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+  }
+/*
+  Notes Section  -----------------------------------------------------*/
   .SC2{
 
-    height: 600px;
-    width:1000px;
-    margin-top: 145px;
+    width:100vw;
+    height: auto;
     overflow-x: hidden;
     font-size: 45px;
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(182, 74, 74);
+    display: block;
+    padding: 0;
+}.SC2T td
+
+{
+  width: 100vw;
+  display: block;
+  padding: 0px
 }
+.SC2T td ul
+
+{
+  width: 100vw;
+  display: block;
+  padding: 0;
+}
+
+/* PQP section ------------------------------------------------ */
 .SC3{
- 
-
-  height: 1100px;
-  width:1000px;
-  margin-top: 145px;
+  height:auto;
+  width:100vw;
   overflow-x: hidden;
-  font-size: 45px;
-  background-color: rgb(217, 217, 217);
+
+
+}.SC3T td
+{
+  width:100vw;
+  display: block;
 
 }
-.SC5{
-  height:500px;
-  width:1000px;
-  margin-top: 145px;
-  overflow-x: hidden;
-  font-size: 45px;
-  background-color: rgb(125, 115, 115);
-
+.SC3T td ul
+{
+  width:100vw;
+  display: block;
+  padding:5px 15px;
+  margin: 0;
 
 }
+/*
+about Section  ----------------------------------*/
+
 .SC4{
-  height:2500px;
-  width:1000px;
-  margin-top: 145px;
-  overflow-x: hidden;
+  height: auto;
+  width:100vw;
   font-size: 45px;
-  background-color:transparent;
+  padding: 0;
+  margin: 0;
+}
 
-
-}.flip-box {
-  width: 800px;
-  height: 1000px;
+.flip-box {
+  width:100vw;
+  display: block;
+  height:500px;
   perspective: 1000px;
-  /* background-color: rgb(15, 12, 12); */
-  /* margin-left:23%; */
-  margin-top: 20%;
-  overflow-y: hidden;
-  /* position: fixed; */
-  display: block;}
+  display: block;
+  margin: 0;
+ } .flip-box-front , .flip-box-inner{
+  border-radius:0px;
+
+ }
   .flip-box-back h1{
-    height: 95px ;
-    width: 650px;
-    background-color: #d6ed50;
+    margin: 0;
+    height: 20px ;
+    width:100%;
     align-content: center;
     align-items: center;
     color: black;
-    font-size: 35px;
-    margin-left:70px;
+    font-size: 15px;
+
   }
   input[type=text],input[type=email],textarea{
-    width:760px;
-    height:100px;
-    font-size: 40px;
+    width:80%;
+    margin: 10px 10%;
+    height:40px;
+    font-size: 15px;
     border: 8px double black;
-    color:black;
-    border: none;
-    outline: none;
-border-bottom: 5px solid black;
-    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 5px solid black;
+
   }
-  
-  
-  
+
   input[type=submit]
   {
-    height: 100px;
-    width: 200px;
-    font-size: 40px;
-    background-color: gray;
+    height: 50px;
+    width:80%;
+    margin:auto 10%;
+    font-size: 20px;
+    background-color: rgb(87, 161, 240);
     color: black;
+    border:2px solid white;
   }input[type=submit]:hover
   {
-    height: 100px;
-    width: 200px;
-    font-size: 40px;
     background-color: rgb(26, 197, 88);
   }.Cimg{
     height: 70px;
@@ -498,21 +637,64 @@ border-bottom: 5px solid black;
    transform: scale(1.2);
     box-shadow: 2px 2px 28px rgb(7, 248, 15);
   }
+/*
+Reference Section  ------------------------------------------------------- */
+
+.SC5{
+  height:auto;
+  width:100vw;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}.SC5 a
+{
+  padding: 0 2px;
+}
+
+
+/* Footer Section  ------------------------------------------------------- */
+
   .SC6{
-    height:400px;
-    width:1000px;
-    margin-top: 145px;
-    overflow-x: hidden;
-    font-size: 45px;
-    background-color: rgb(2, 2, 2);
-  
-  
+    height:auto;
+    width:100vw;
+    font-size: 15px;
+    display: block;
+    padding: 0;
+
+
+  }.SC6 .foter-div1
+
+  {
+    width: 100vw;
+    margin:0;
+    padding:0px;
+    margin-top: 10px;
+
+
+  }.foter-div1 p , .foter-div1 h3 , .foter-div1 img , .foter-div1 a
+  {
+       padding-left: 25px;
   }
 
+  .SC6 .foter-div1 img
+
+  {
+
+    width: 50%;
+  }
+
+  .SC6 .foter-div1 a
+  {
+display: block;
+padding: 10px 20px;
+
+
+  }
+ .SC6 .foter-div1 span {  font-size: 15px; text-align: center; display: block; padding: 10px 0; margin-top: 20px; color: var(--text-color2);}
 
 
 }
-  
 
 
-  
+

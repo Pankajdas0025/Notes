@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="alert('This function is disable  by Host');return false;" >
+<!-- <html lang="en" oncontextmenu="alert('This function is disable  by Host');return false;" > -->
+<html lan="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,7 @@
 
     <!-- file links -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cdn.css">
-    <script src="script.js"></script>
+
     <!-- here is all cdn links -->
      <link  rel="shortcut icon" type="Logo/png" href="Images/FI.png">
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,41 +19,35 @@
        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!-- this is for  only animation -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-   />
+
+
 
 </head>
 <body>
-
-
-    
+    <main>
     <header  >
-          
+
             <!-- <button id="tbtn" onclick="toggle()"ondblclick="toggleback()"><div id="toggle"></div></button> -->
             <img src="Images/Logo.png" id="Logo">
             <!-- mobile menu bar -->
-            <h1 id="Mobmenu" onclick="openNav();">&#9776;</h1>
+            <h1 id="Mobmenu" onclick="openNav();"><i class="fa fa-bars"></i></h1>
             <!-- End mobile menu bar  -->
-            <a href="#About"><button id="Abtn">About Me</button></a>
             <a href="#Reference"><button id="Rbtn">Reference</button></a>
+            <a href="#About"><button id="Abtn">About Me</button></a>
             <a href="#PYQ"><button id="Pbtn">PQP</button></a>
             <a href="#Notes"><button id="Nbtn">Notes</button></a>
             <button onclick="Scrollbtn()" id="Hbtn">Home</button>
-          
-    </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
+    </header>
+
+
+<!-- Home Page First Section ------------------------------------------ -->
     <div class="SC1" >
         <!-- Code for Mobile navbar -->
         <div class="Mmenu" id="result">
             <a ><button id="Cbtn" onclick="closeNav()">Close</button></a>
-            <a href="#About"><button id="Abtn">About Me</button></a>
             <a href="#Reference"><button id="Rbtn">Reference</button></a>
+            <a href="#About"><button id="Abtn">About Me</button></a>
             <a href="#PYQ"><button id="Pbtn">PQP</button></a>
             <a href="#Notes"><button id="Nbtn">Notes</button></a>
              <button onclick="Scrollbtn()" id="Hbtn">Home</button>
@@ -67,15 +61,14 @@
         </h1>
            <img src="Images/TMU.png" height="80" width="200px" id="TMU">
            <!-- <button>Notes</button> <button>Notes</button> <button>Notes</button> -->
-        
-        
         </td>
-        <td id="Hpage"><img src="Images/MI.png" height="600" width="600" style="box-shadow:px 2px 8px navy ;">
+        <td id="Hpage"><img src="Images/MI.png" id="pplogo" >
             <button id="Timebtn"></button></td>
     </tr>
      </table>
-    
     </div>
+
+<!--     Home Page First Section ------------------------------------------ end -->
     <br>
     <br>
     <br>
@@ -83,26 +76,42 @@
     <center><font size="35">Notes <i class="fa-solid fa-download"></i></font></center>
     <br>
 
-
+<!--
+Home Page second Section for Notes ------------------------------------------ */ -->
     <div class="SC2" id="Notes">
         <table class="SC2T" border="0">
             <tr height="50%">
                 <td width="33.3%">
                     <h3><a href="https://drive.google.com/drive/folders/1PpWMQbQbMDLd-TCc2tjrbU6Z0LuG42ZN?usp=drive_link">SEMESTER 1 <i class="fa-solid fa-download"></i></a></h3>
                     <ul>
-                      
+
                         <li>Computer fundamental and introduction of Digital Logic LAB</li>
                         <li>Computer fundamental and introduction of Digital Logic</li>
                         <li>English Communication - I</li>
                         <li>Environmental Science</li>
-                        
+
                         <li>Indian Knowledge system</li>
                         <li>Cyber Security</li>
                         <li>Artificial intelligence</li>
                         <li>Data Science</li>
                       </ul>
-                
 
+
+                </td>
+                   <td width="33.3%">
+                    <h3><a href="https://drive.google.com/drive/folders/1prubTcPTqHe5bnJDNbhGcHgkOMbjHLMI?usp=drive_link">SEMESTER 2 <i class="fa-solid fa-download"></i></a></h3>
+                    <ul>
+                        <li>Provlem solving using C LAB</li>
+                        <li>Provlem solving using C</li>
+                        <li>Entrepreneurship and Innovatio</li>
+                        <li>English communication - II</li>
+                        <li>Digital tecgnology in Education</li>
+                        <li>Health and Wellness</li>
+                        <li>Basic od statistics</li>
+                        <li>Vedic Mathematics</li>
+                        <li>Personal Effectiveness(CTLD)</li>
+                        <li>LPBEI - I</li>
+                    </ul>
                 </td>
                 <td width="33.3%">
                     <h3><a href="https://drive.google.com/drive/folders/1KqPv-nkDtKQPwpMYIXA8xdgvqrMh87sS?usp=drive_link">SEMESTER 3 <i class="fa-solid fa-download"></i></a></h3>
@@ -115,46 +124,13 @@
                         <li><a href="https://drive.google.com/drive/folders/1KqPv-nkDtKQPwpMYIXA8xdgvqrMh87sS?usp=drive_link">Operating system</a></li>
                         <li><a href="https://drive.google.com/drive/folders/1KqPv-nkDtKQPwpMYIXA8xdgvqrMh87sS?usp=drive_link">Introductio of <br>Machine learing</a></li>
                         <li><a href="https://drive.google.com/drive/folders/1KqPv-nkDtKQPwpMYIXA8xdgvqrMh87sS?usp=drive_link">Aptitude and design thinking</a></li>
-                       
-                        <li><a href="https://drive.google.com/drive/folders/1KqPv-nkDtKQPwpMYIXA8xdgvqrMh87sS?usp=drive_link">Self Development and life<br> readness</a></li>
-                        <li></li>
-                    </ul>
-                </td>
-                <td width="33.3%">
-                    <h3><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">SEMESTER 5 <i class="fa-solid fa-download"></i></a> </h3>
 
-                    <ul>
-                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Object-Oriented programming using JAVA LAB</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">PHP & MySQL LAB</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Object-Oriented programming concept<br> using JAVA</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">PHP & MySQL</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Human valyes and Ethics</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Communication Engagement <br>Program</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Su<a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">mmer Internship Report</a></li>
-                        <li></li>
+                        <li><a href="https://drive.google.com/drive/folders/1KqPv-nkDtKQPwpMYIXA8xdgvqrMh87sS?usp=drive_link">Self Development and life<br> readness</a></li>
                         <li></li>
                     </ul>
                 </td>
             </tr>
             <tr height="50%">
-                <td width="33.3%">
-                    <h3><a href="https://drive.google.com/drive/folders/1prubTcPTqHe5bnJDNbhGcHgkOMbjHLMI?usp=drive_link">SEMESTER 2 <i class="fa-solid fa-download"></i></a></h3>
-                    <ul>
-                        <li>Provlem solving using C LAB</li>
-                        <li>Provlem solving using C</li>
-                        <li>Entrepreneurship and Innovatio</li>
-                        <li>English communication - II</li>
-                        <li>Digital tecgnology in Education</li>
-                        <li>Health and Wellness</li>
-                        <li>Basic od statistics</li>
-                        <li>Vedic Mathematics</li>
-                        <li>Personal Effectiveness(CTLD)</li>
-                      
-                        <li>LPBEI - I</li>
-                        
-                    </ul>
-
-                </td>
                 <td width="33.3%">
                     <h3><a href="https://drive.google.com/drive/folders/1iE6KOuO3NwDHr2LbNTvP-78U0D5uMAX9?usp=drive_link">SEMESTER 4 <i class="fa-solid fa-download"></i></a></h3>
 
@@ -168,6 +144,21 @@
                         <li>Communication Tools in Digital Era</li>
                         <li>LPBEI </li>
                         <li>Cocurrulam activity<br>II </li>
+                    </ul>
+                </td>
+                 <td width="33.3%">
+                    <h3><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">SEMESTER 5 <i class="fa-solid fa-download"></i></a> </h3>
+
+                    <ul>
+                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Object-Oriented programming using JAVA LAB</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">PHP & MySQL LAB</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Object-Oriented programming concept<br> using JAVA</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">PHP & MySQL</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Human valyes and Ethics</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Communication Engagement <br>Program</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">Su<a href="https://drive.google.com/drive/folders/1ugec7EDBq8yYk3Lp-r1dP7qlm2Yp_TDA?usp=drive_link">mmer Internship Report</a></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </td>
                 <td width="33.3%">
@@ -186,10 +177,11 @@
                     </ul>
                 </td>
             </tr>
-
         </table>
-
     </div>
+
+
+<!-- Home Page second Section for Notes ------------------------------------------ end -->
     <br>
     <br>
     <br>
@@ -207,7 +199,7 @@
                         <a href="https://drive.google.com/drive/folders/1pO0Q1TW7KNGVjZ18pBbl3SGY2OeHbrwj?usp=drive_link"><li id="Event">CT - II Paper</li></a>
                         <a href="https://drive.google.com/drive/folders/1pO0Q1TW7KNGVjZ18pBbl3SGY2OeHbrwj?usp=drive_link"><li id="Event">CT - III Paper</li></a>
                         <a href="https://drive.google.com/drive/folders/1pO0Q1TW7KNGVjZ18pBbl3SGY2OeHbrwj?usp=drive_link"><li id="Event">External Paper</li></a>
-                       
+
                     </ul></td>
                 <td><h3>SECOND SEM</h3>
                     <ul>
@@ -216,16 +208,16 @@
                         <a href="https://drive.google.com/drive/folders/1kCfWXBpFAXds6b_MmU-qHLMZTPg6PDW8?usp=drive_link"><li id="Event">CT - II Paper</li></a>
                         <a href="https://drive.google.com/drive/folders/1kCfWXBpFAXds6b_MmU-qHLMZTPg6PDW8?usp=drive_link"><li id="Event">External Paper</li></a>
 
-                       
+
                     </ul></td>
                 <td><h3>THIRD SEM</h3>
                     <ul>
-                       
+
                         <a href="https://drive.google.com/drive/folders/1C6fKN5momkdhvnvSA_1_KC260gbBmdV6?usp=drive_link"><li id="Event">CT - I Paper</li></a>
                         <a href="https://drive.google.com/drive/folders/1C6fKN5momkdhvnvSA_1_KC260gbBmdV6?usp=drive_link"><li id="Event">CT - II Paper</li></a>
                         <a href="https://drive.google.com/drive/folders/1C6fKN5momkdhvnvSA_1_KC260gbBmdV6?usp=drive_link"><li id="Event">CT - III Paper</li></a>
                         <a href="https://drive.google.com/drive/folders/1C6fKN5momkdhvnvSA_1_KC260gbBmdV6?usp=drive_link"><li id="Event">External Paper</li></a>
-                       
+
                     </ul></td>
             </tr>
             <tr>
@@ -235,7 +227,7 @@
                         <li id="Event">CT - II Paper</li>
                         <li id="Event">CT - III Paper</li>
                         <li id="Event">External Paper</li>
-                       
+
                     </ul></td>
                 <td><h3>FIFTH SEM</h3>
                     <ul>
@@ -243,7 +235,7 @@
                         <li id="Event">CT - II Paper</li>
                         <li id="Event">CT - III Paper</li>
                         <li id="Event">External Paper</li>
-                       
+
                     </ul></td>
                 <td><h3>SIXTH SEM</h3>
                     <ul>
@@ -251,83 +243,32 @@
                         <li id="Event">CT - II Paper</li>
                         <li id="Event">CT - III Paper</li>
                         <li id="Event">External Paper</li>
-                       
+
                     </ul></td>
             </tr>
             </table>
     </div>
     <br>
-    <br>
-    <div class="SC5" id="Reference">
-<a href="https://www.geeksforgeeks.org/">GeeksforGeeks </a>
-<a href="https://www.w3schools.com/">W3Schools </a>
-<a href="https://stackoverflow.com/">Stack Overflow </a>
-<a href="https://www.javatpoint.com/">Javatpoint</a>
-<a href="https://www.studynama.com/">Studynama</a>
-<a href="https://www.studynama.com/#google_vignette">IndiaBCA </a>
-<a href="">Course Hero </a>
-<a href="">Notesgen </a>
-<a href="">Scribd</a>
-<a href="">BCA Notes </a>
-<a href="">Engineering Notes</a>
-<a href="">Lecturenotes </a>
-<a href="">ShoutMeLoud </a>
-<a href="https://www.vedantu.com/">Vedantu</a>
-<a href="https://www.khanacademy.org/">Khan Academy</a> 
-<a href="https://www.learnvern.com/">Learnvern </a>
-<a href="https://www.coursera.org/?msockid=05d11c372f6f6b60260109082e9d6aad">Coursera </a><a href="https://www.turing.com/">Turing</a>
-<a href="https://www.edx.org/">edX </a>
-<a href="https://www.udemy.com/">Udemy </a>
-<a href="">TutorialsPoint </a> 
-<a href="">Codeacademy </a>
-<a href="https://www.turing.com/">Turing</a>
-<a href="https://study.com/">Study.com </a>
-<a href="">FreeCodeCamp </a>
-<a href="">TutorialsDock</a>
-<a href="">Cprogramming </a>
-<a href="">Sololearn </a>
-<a href="">Techbeamers</a>
-<a href="">Techybeats</a>
-<a href="">Mindmajix</a>
-<a href="">Buzzle </a>
-<a href="">ExamFear </a>
-<a href="">NotesShelf</a>
-<a href="">MyCBSEguide </a>
-<a href="">StudyChaCha </a>
-<a href="">BrainKart </a>
-<a href="">Pathfinders Academy</a>
-<a href="">AllExamNotes</a> 
-<a href="">ProjectTopics</a>
-<a href="">Codeforces </a>
-<a href="">Edureka</a>
-<a href="">ToppersNotes</a>
-<a href="https://www.exammix.com/">ExamTrix </a>
-<a href="">Academia.edu </a>
-<a href="">NotesInClass </a>
-<a href="https://lecturenotes.in/">Lecture Notes Online</a>
-<a href="https://www.udemy.com/">Udemy </a>
 
- </div>
-    <br>
-    <div class="SC4" id="About">
+<div class="SC4" id="About">
         <br>
 
         <div class="flip-box">
 
             <div class="flip-box-inner">
             <div class="flip-box-front">
-              <!-- <br><br><br><br><br><br><br><br> <br><br>
-              <h1 style="font-size: 60px; color: rgb(12, 10, 10);">About Me</h1> -->
+                <h4>About Me</h4>
+                <h4>Click to know more</h4>
             </div>
             <div class="flip-box-back">
                 <br>
                 <br>
-              <img src="Images/Passport size photo.jpg" id="Aimg">
+              <img src="Images/Passport size photo.jpeg" id="Aimg">
               <br>
               <br>
               <h1>PANKAJ KUMAR DAS</h1>
               <h1>WEB DEVELOPER</h1>
-              <h1><font size="4" style="line-height: 2px; padding: 0;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif; color: rgb(88, 84, 84);">I helps people like you to design Portfolio,Bloging page,Educational Website.</font></h1>
+
 
               <!-- <center><h2 id="Atext">I am Pankaj Kumar Das , a passionate web developer with strong foundation in HTML,CSS<br>
                 And JavaScript and Student of BCA <br>at Teerthanker Mahaveer university</h2>
@@ -338,24 +279,17 @@
         </div>
 
         <div class="flip-box" id="Fixed" id="#Contact">
-            
-            <font size="35">Contact Me..</font></center>
+        Contact Me
                 <br>
                 <br>
                 <!-- action="mailto:useremail5569121@gmail.com"  -->
                 <form  onsubmit="formCheck()">
                 <input type="text" placeholder="Enter Your name here.." id="uname" name="Name" required>
-                <br>
-                <br>
                 <input type="email" placeholder="Enter Your email here.." id="uemail" name="Email" narequired>
-                <br>
-                <br>
                 <textarea placeholder="type some message" id="umsg" minlength="25" required></textarea>
-                <br>
-                <br>
                 <input type="submit" value="Sent">
                 </form>
-                <br>
+                <!-- <br>
                 <font size="6">Follow Me</font></center><br>
                 <br>
                 <a href="mailto-useremail5569121@gmail.com"><img src="Images/Email logo.png" class="Cimg"></a>
@@ -363,19 +297,103 @@
                 <a href="https://www.instagram.com/creator_0025/"><img src="Images/Twitter logo.png" class="Cimg"></a>
                 <a href="https://www.instagram.com/pankajdas_0025/"><img src="Images/Instagram logo.png" class="Cimg"></a>
                 <a href="https://github.com/Pankajdas0025"><img src="Images/Github logo.jpeg" class="Cimg"></a>
+        </div> -->
+        </div>
+            <br>
+<div class="SC5" id="Reference">
+<a href="https://www.geeksforgeeks.org/">
+  <img src="https://img.shields.io/badge/GeeksforGeeks-0F9D58?style=for-the-badge&logo=GeeksforGeeks&logoColor=white" />
+</a>
 
-             
-           
-        
-        
-    
-        </div>
-        </div>
-    
-        <div class="SC6">
-            <center>  | Copyright © 2024 All rights reserved |</center>
-          
+<a href="https://www.w3schools.com/">
+  <img src="https://img.shields.io/badge/W3Schools-04AA6D?style=for-the-badge&logo=w3schools&logoColor=white" />
+</a>
 
+<a href="https://stackoverflow.com/">
+  <img src="https://img.shields.io/badge/Stack%20Overflow-F48024?style=for-the-badge&logo=stackoverflow&logoColor=white" />
+</a>
+
+<a href="https://www.javatpoint.com/">
+  <img src="https://img.shields.io/badge/Javatpoint-FF6F00?style=for-the-badge&logo=java&logoColor=white" />
+</a>
+
+<a href="https://www.studynama.com/">
+  <img src="https://img.shields.io/badge/Studynama-2E7D32?style=for-the-badge&logo=googleclassroom&logoColor=white" />
+</a>
+
+<a href="https://www.vedantu.com/">
+  <img src="https://img.shields.io/badge/Vedantu-FF6600?style=for-the-badge&logo=googlemeet&logoColor=white" />
+</a>
+
+<a href="https://www.khanacademy.org/">
+  <img src="https://img.shields.io/badge/Khan%20Academy-14BF96?style=for-the-badge&logo=khanacademy&logoColor=white" />
+</a>
+
+<a href="https://www.learnvern.com/">
+  <img src="https://img.shields.io/badge/Learnvern-2196F3?style=for-the-badge&logo=readthedocs&logoColor=white" />
+</a>
+
+<a href="https://www.coursera.org/">
+  <img src="https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white" />
+</a>
+
+<a href="https://www.turing.com/">
+  <img src="https://img.shields.io/badge/Turing-1E90FF?style=for-the-badge&logo=nextdoor&logoColor=white" />
+</a>
+
+<a href="https://www.edx.org/">
+  <img src="https://img.shields.io/badge/edX-02262B?style=for-the-badge&logo=edx&logoColor=white" />
+</a>
+
+<a href="https://www.udemy.com/">
+  <img src="https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white" />
+</a>
+
+<a href="https://study.com/">
+  <img src="https://img.shields.io/badge/Study.com-2D9CDB?style=for-the-badge&logo=googleclassroom&logoColor=white" />
+</a>
+
+<a href="https://www.exammix.com/">
+  <img src="https://img.shields.io/badge/ExamTrix-FF1744?style=for-the-badge&logo=googleforms&logoColor=white" />
+</a>
+
+<a href="https://lecturenotes.in/">
+  <img src="https://img.shields.io/badge/Lecture%20Notes-00C853?style=for-the-badge&logo=googledocs&logoColor=white" />
+</a>
+
+ </div>
+
+<!-- section For Footer  ----------------------------------------------------->
+        <footer class="SC6">
+            <div class="foter-div1"><h3>About</h3>
+            <p>
+                Get Notes is Educational wenbsite design for those students who want their career in BCA specially From Teerthanker Mahaveer university , Moradabad ,  in this website a students can access all BCA Notes and their Past Year Question papers , CT's paper , Project Idea And every Type of Cocurrilam Activity Ideaas
+            </p>
+            <img src="Images/Logo.png">
+            <br>
+            <p>⭐⭐⭐⭐⭐</p>
         </div>
+            <div class="foter-div1"><h3>Quick Links</h3>
+                <a href="#home">→ Home</a>
+                  <a href="#home">→ Notes</a>
+                    <a href="#home">→ PQP</a>
+                      <a href="#home">→ About</a>
+                        <a href="#home">→ Assignments</a>
+                          <a href="#home">→ Free Projects</a>
+            </div>
+            <div class="foter-div1"><h3>important links</h3>
+                <a href="#home">→ Instagram</a>
+                  <a href="#home">→ Linkedin</a>
+                    <a href="#home">→ Buy Me a Coffee</a>
+                      <a href="#home">→ About</a>
+                        <a href="#home">→ Assignments</a>
+                          <a href="#home">→ Free Projects</a>
+                            <span> &copy; All right reserved by GetNotes @ 2025</span>
+          </div>
+
+        </footer>
+</main>
+
+        <script src="script.js"></script>
 </body>
 </html>

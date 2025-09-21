@@ -1,20 +1,16 @@
-function  Time(){
+function  Time()
+{
    var Time=new Date();
    var a=Time.toLocaleTimeString();
    document.getElementById("Timebtn").innerHTML=a;
 
 }
-setInterval(Time,100)
+setInterval(Time,100);
 // for home button only //
 
-function Scrollbtn(){
+function Scrollbtn(){window.scrollTo(0, -1000);}
 
- window.scrollTo(0, -1000);
-      
-
-}
-
-// nav button 
+// Navigation bar .........................................................................................
 
   window.document.onscroll=function() {
     if (document.documentElement.scrollTop <300) {
@@ -42,18 +38,20 @@ function Scrollbtn(){
         document.getElementById("Hbtn").style.backgroundColor="";
         document.getElementById("Nbtn").style.backgroundColor="";
         document.getElementById("Pbtn").style.backgroundColor="";
-        document.getElementById("Rbtn").style.backgroundColor="red";
-        document.getElementById("Abtn").style.backgroundColor="";
+        document.getElementById("Rbtn").style.backgroundColor="";
+        document.getElementById("Abtn").style.backgroundColor="red";
       };
       if (document.documentElement.scrollTop>3200) {
         document.getElementById("Hbtn").style.backgroundColor="";
         document.getElementById("Nbtn").style.backgroundColor="";
         document.getElementById("Pbtn").style.backgroundColor="";
-        document.getElementById("Rbtn").style.backgroundColor="";
-        document.getElementById("Abtn").style.backgroundColor="red";
+        document.getElementById("Rbtn").style.backgroundColor="red";
+        document.getElementById("Abtn").style.backgroundColor="";
       };
     }
 
+
+  // Form validation ------------------------------------------------------------------
   function formCheck(){
     a=document.getElementById("uname").value;
     b=document.getElementById("uemail").value;
@@ -72,6 +70,7 @@ function Scrollbtn(){
     else alert("All field is required !");
 
   }
+  // Mobile Navigation bar -----------------------------------------------------------------------
 
 function openNav() {
   document.getElementById("result").style.display="block";
@@ -80,4 +79,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("result").style.display="none";
 }
-  

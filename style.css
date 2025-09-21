@@ -27,9 +27,7 @@ background: rgb(255, 255, 255);font-family: var(--font);
 
 }
 main{
- /* background-color: wheat;
-
-  /*background: linear-gradient(180deg , var(--primary-color) , var(--secondary-color) , var(--tertiary-color)); */
+  background: rgb(230, 225, 225);font-family: var(--font);
 }
 
 
@@ -233,7 +231,7 @@ h3 a:hover{
 .SC4{
     height: auto;
     width: 100%;
-    background-color: #9eb02c;
+    background-color: #181c02;
     margin-bottom: 30px;
 
 
@@ -275,10 +273,7 @@ h3 a:hover{
   }
 
   .flip-box-front {
-    /* background-color:rgb(29, 69, 94); */
-    background-image: url(Images/A.png);
-    background-size: cover;
-    background-position: center;
+
     color:black;
     border-radius: 23px;
   }
@@ -288,6 +283,7 @@ h3 a:hover{
     color: white;
     transform: rotateY(180deg);
     border-radius: 23px;
+    text-align: center;
 
   }#Aimg{
     height: 200px;
@@ -302,10 +298,9 @@ h3 a:hover{
   }.flip-box-back h1{
     height: 50px auto;
     width: 400px;
-    background-color: #d6ed50;
     align-content: center;
     align-items: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     margin-left: 45px;
   }
@@ -323,9 +318,6 @@ h3 a:hover{
     background-color: gray;
   }input[type=submit]:hover
   {
-    height: 40px;
-    width: 100px;
-    font-size: 20px;
     background-color: rgb(26, 197, 88);
   }.Cimg{
     height: 40px;
@@ -344,7 +336,7 @@ h3 a:hover{
   .SC5{
     width: 100%;
     height:auto;
-    background-color: #c4c7a4;
+
   }.SC5 a{
     font-size: 25px;
     columns: black;
@@ -397,7 +389,7 @@ transform: translateX(20px);
 /* Mobiles Responsive  */
 
 
-  @media only screen and (max-width:700px)
+  @media only screen and (max-width:800px)
    {
 
     body
@@ -409,10 +401,11 @@ transform: translateX(20px);
     }
     main
     {
-      margin: 0;
+
       width: 100vw;
       height: auto;
       display: block;
+      font-size: 10px;
     }
     header
 
@@ -513,6 +506,7 @@ margin: 0;
   font-weight: bold;
   color: #230e09;
   border: none;
+  display: none;
 
 
   }#TMU{
@@ -534,7 +528,6 @@ margin: 0;
     height: auto;
     overflow-x: hidden;
     font-size: 45px;
-    background-color: rgb(182, 74, 74);
     display: block;
     padding: 0;
 }.SC2T td
@@ -582,6 +575,7 @@ about Section  ----------------------------------*/
   font-size: 45px;
   padding: 0;
   margin: 0;
+  background-color: transparent;;
 }
 
 .flip-box {
@@ -593,6 +587,13 @@ about Section  ----------------------------------*/
   margin: 0;
  } .flip-box-front , .flip-box-inner{
   border-radius:0px;
+  font-size: 20px;
+  padding: 0;
+  text-align: left;
+  color: var(--text-color2);
+
+ }.flip-box-front p {
+  padding: 20px;
 
  }
   .flip-box-back h1{
@@ -601,13 +602,13 @@ about Section  ----------------------------------*/
     width:100%;
     align-content: center;
     align-items: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 15px;
 
   }
   input[type=text],input[type=email],textarea{
     width:80%;
-    margin: 10px 10%;
+    margin: 10px 5%;
     height:40px;
     font-size: 15px;
     border: 8px double black;
@@ -618,8 +619,8 @@ about Section  ----------------------------------*/
   input[type=submit]
   {
     height: 50px;
-    width:80%;
-    margin:auto 10%;
+    width:90%;
+    margin:auto 5%;
     font-size: 20px;
     background-color: rgb(87, 161, 240);
     color: black;
@@ -676,11 +677,9 @@ Reference Section  ------------------------------------------------------- */
   {
        padding-left: 25px;
   }
-
   .SC6 .foter-div1 img
 
   {
-
     width: 50%;
   }
 
@@ -691,10 +690,132 @@ padding: 10px 20px;
 
 
   }
- .SC6 .foter-div1 span {  font-size: 15px; text-align: center; display: block; padding: 10px 0; margin-top: 20px; color: var(--text-color2);}
+ .SC6 .foter-div1 span
 
+ {  font-size: 15px;
+  text-align: center;
+   display: block;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: var(--text-color2);
 
 }
 
 
 
+   }
+
+@media only screen and (min-width: 900px) and (max-width: 1600px) {
+  body {
+
+    font-size: 18px;
+  }
+
+/* Section Three For Previous Year QuestionS links  ---------------------------------------------------*/
+
+.SC3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 10px;
+    background-color: turquoise;
+    padding: 0;
+    margin: 0;
+
+
+
+}.SC3T td{
+
+  width: 10%;
+
+
+} .SC3T li{
+font-size: 20px;
+    background-color: rgb(4, 40, 46);
+    margin-top: 12px;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+    width: 60%;
+    margin: 10px 20%;
+
+}.SC3T a{
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Section Three For Previous Year QuestionS links =--------------------------------------------------end */
+
+/* Section  four For about  -------------------------------------------------------------------------*/
+.SC4{
+    height: auto;
+    width: 100%;
+    background-color: #a5c214;
+    margin-bottom: 30px;
+
+
+}
+
+.flip-box {
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    /* background-color: rgb(101, 24, 24); */
+    margin-left:10%;
+    float:left;
+    display:block;
+
+  }.flip-box-back h1{
+    height: 50px auto;
+    width:100%;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 0;
+
+  }
+
+  input[type=text],input[type=email],textarea{
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }input[type=submit]
+  {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    background-color: gray;
+  }input[type=submit]:hover
+  {
+    background-color: rgb(26, 197, 88);
+  }.flip-box-front
+
+  {
+    color: white;
+  }
+  .flip-box-front p
+
+  {
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* Section Four for About  ------------------------------------------------------------------------end-*/
+  /* Section  five  For reference Links  ----------------------------------------------------------------*/
+  .SC5{
+    margin-top: 500px;
+    width: 100%;
+    height:300px;
+    position: relative;
+
+  }.SC5 a{
+    font-size: 25px;
+    columns: black;
+    padding: 50px 15px;
+    margin: 25px 0;
+    line-height: 55px;
+    text-decoration: none;
+  }
+  /* Section  five  For reference Links  ------------------------------------------------------------------end-*/
+}

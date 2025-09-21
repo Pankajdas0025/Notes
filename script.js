@@ -51,25 +51,6 @@ function Scrollbtn(){window.scrollTo(0, -1000);}
     }
 
 
-  // Form validation ------------------------------------------------------------------
-  function formCheck(){
-    a=document.getElementById("uname").value;
-    b=document.getElementById("uemail").value;
-    c=document.getElementById("umsg").value;
-    var Objtext={
-      Name :a,
-      Email:b,
-      message:c,
-    }
-    var Strtext=JSON.stringify(Objtext);
-    if(a!=" "&&b!=" "&&c!=" ")
-    {
-      localStorage.setItem(b,Strtext);
-      alert("Your message sucessfully sent");
-    }
-    else alert("All field is required !");
-
-  }
   // Mobile Navigation bar -----------------------------------------------------------------------
 
 function openNav() {

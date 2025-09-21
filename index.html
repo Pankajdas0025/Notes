@@ -279,13 +279,54 @@ Get Notes is your one-stop solution! Here, students can find BCA notes, previous
         Contact Me
                 <br>
                 <br>
-                <!-- action="mailto:useremail5569121@gmail.com"  -->
-                <form  onsubmit="formCheck()">
-                <input type="text" placeholder="Enter Your name here.." id="uname" name="Name" required>
-                <input type="email" placeholder="Enter Your email here.." id="uemail" name="Email" required>
-                <textarea placeholder="type some message" id="umsg" minlength="25" required></textarea>
-                <input type="submit" value="Sent">
-                </form>
+<form action="mailto:pd5569121@gmail.com" method="post" enctype="text/plain" onsubmit="return FormCheck()">
+  <input type="text" placeholder="Enter Your name here.." id="uname" name="Name" required>
+  <input type="email" placeholder="Enter Your email here.." id="uemail" name="Email" required>
+  <textarea placeholder="Type some message (min 25 characters)" id="umsg" minlength="25" name="Message" required></textarea>
+  <input type="submit" value="Send">
+</form>
+
+<script>
+function FormCheck() {
+    let name = document.getElementById("uname").value.trim();
+    let email = document.getElementById("uemail").value.trim();
+    let message = document.getElementById("umsg").value.trim();
+
+    // Regex for name (letters & spaces only)
+    let namePattern = /^[A-Za-z\s]+$/;
+    // Simple email regex
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Validation
+    if (!name || !email || !message) {
+        alert("⚠️ All fields are required!");
+        return false;
+    }
+
+    if (!namePattern.test(name)) {
+        alert("⚠️ Name should only contain letters (no numbers or symbols).");
+        return false;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert("⚠️ Please enter a valid email address.");
+        return false;
+    }
+
+    if (message.length < 25) {
+        alert("⚠️ Message should be at least 25 characters long.");
+        return false;
+    }
+
+    // Optional: Save in localStorage
+    const formData = { Name: name, Email: email, Message: message };
+    localStorage.setItem(email, JSON.stringify(formData));
+
+    alert("✅ Form is valid. Sending email...");
+    return true; // Proceed with mailto
+}
+</script>
+
                 <!-- <br>
                 <font size="6">Follow Me</font></center><br>
                 <br>
@@ -378,12 +419,12 @@ Get Notes is your one-stop solution! Here, students can find BCA notes, previous
                           <a href="#home">→ Free Projects</a>
             </div>
             <div class="foter-div1"><h3>important links</h3>
-                <a href="#home">→ Instagram</a>
-                  <a href="#home">→ Linkedin</a>
-                    <a href="#home">→ Buy Me a Coffee</a>
-                      <a href="#home">→ About</a>
-                        <a href="#home">→ Assignments</a>
-                          <a href="#home">→ Free Projects</a>
+                <a href="https://www.instagram.com/pankajdas_0025/">→ Instagram</a>
+                  <a href="https://www.linkedin.com/in/pankaj-kumar-das-134603297">→ Linkedin</a>
+                    <a href="https://buymeacoffee.com/pankajkuma7">→ Buy Me a Coffee</a>
+                      <a href="https://github.com/Pankajdas0025">→ About</a>
+                        <a href="https://buymeacoffee.com/pankajkuma7">→ Assignments</a>
+                          <a href="https://buymeacoffee.com/pankajkuma7">→ Free Projects</a>
                             <span> &copy; All right reserved by GetNotes @ 2025</span>
           </div>
 
